@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400&display=swap" rel="stylesheet">
+    <title>h+s</title>
+    
+</head>
+<body>
+    <!-- Header -->
+    <div id="header-inicio">
+            <h1>h+s</h1>
+    </div>
+
+    <!-- App Container -->
+    <div id="habits-scorecard">
+        <div class="container container--scorecard">
+            <div class="agregar--quitar">
+                <h2 class = "agregar--habitos">Agregar Habitos <i class="fas fa-arrow-down"></i></h2>
+                <h2 class = "quitar--habitos">Quitar Todos los Habitos</h2>
+            </div>
+            <form class="form form--habito">
+                <input type="text" class = "form__input">
+                <i class="fas fa-plus"></i>
+                <i class="fas fa-minus"></i>
+                <i class="fas fa-equals"></i>
+            </form>
+            <hr style="margin-bottom: 1rem">
+            <div class="container--habitos">
+                <!-- <div class ="habits plus">
+                    <p> ${formInput.value} </p>
+                    <i class="far fa-trash-alt borrar--habito"></i>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

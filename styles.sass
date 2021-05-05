@@ -1,0 +1,137 @@
+$green-color: #39b385
+$red-color: #e52a5a
+$yellow-color: #ffcb03
+$light-color: #f4f4f4
+$medium-color: #ccc
+$dark-color: #333
+$darkest-color: #000
+$website-width: 1280px
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+body
+    font-family: "Roboto Mono", monospace, sans-serif
+    line-height: 1.6
+    background: #fff
+    -moz-user-select: none
+    -webkit-user-select: none
+    -ms-user-select: none
+    user-select: none
+
+a
+    text-decoration: none
+    color: $dark-color
+
+ul
+    list-style: none
+
+.container
+    max-width: $website-width
+    padding: 0 1.5rem
+    margin: auto
+    overflow: hidden
+    &--scorecard
+        display: flex
+        flex-direction: column
+        align-items: center
+
+/** .noselect 
+  -webkit-touch-callout: none 
+    -webkit-user-select: none
+     -khtml-user-select: none
+       -moz-user-select: none 
+        -ms-user-select: none 
+            user-select: none  **/
+
+/** Header **/
+#header-inicio
+    h1
+        color: $dark-color
+        font-weight: 200
+        font-size: 7rem
+    display: flex
+    width: 100%
+    justify-content: center
+    align-items: center
+
+#habits-scorecard
+    .agregar--quitar
+        border: 1px solid transparent
+        width: 100%
+        display: flex
+        justify-content: space-between
+        margin-bottom: 1rem
+        .agregar--habitos
+            &:hover
+                color: $green-color
+                transition: all 0.3s
+        .quitar--habitos
+            &:hover
+                color: $red-color
+                transition: all 0.3s
+        h2
+            font-size: 2rem
+            font-weight: 400
+            margin-bottom: 1.5rem
+            cursor: pointer
+    form
+        width: 100%
+        .form__input
+            width: 93%;
+            border: none;
+            background-color: $dark-color;
+            font-family: inherit;
+            font-size: 1rem;
+            
+            color: $light-color;
+            padding: 0.3rem 1rem;
+            margin-bottom: 1rem
+            border-radius: 0.7rem;
+            transition: all 0.3s;
+            &:focus
+                outline: none
+        i
+            font-size: 1.2rem
+            cursor: pointer
+        .fa-plus
+            &:hover    
+                color: $green-color
+                transition: all 0.3s
+        .fa-minus
+            &:hover
+                color: $red-color
+                transition: all 0.3s
+        .fa-equals
+            &:hover
+                color: $yellow-color
+                transition: all 0.3s
+    .container--habitos
+        width: 100%
+        .habits
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            padding: 0.3rem 1rem
+            margin-bottom: 0.7rem
+            border-radius: 10px
+            &--plus
+                background-color: $green-color
+            &--minus
+                background-color: $red-color
+            &--equals
+                background-color: $yellow-color
+            i
+                font-size: 1.2rem
+                cursor: pointer
+                &:hover
+                    color: $light-color
+                    // font-size: 1.2rem
+                    transition: all 0.3s
+        button
+            background: transparent
+            border: 0

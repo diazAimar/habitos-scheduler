@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", monospace, sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 1.5rem;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container--scorecard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/** .noselect
+  -webkit-touch-callout: none
+    -webkit-user-select: none
+     -khtml-user-select: none
+       -moz-user-select: none
+        -ms-user-select: none
+            user-select: none  **/
+/** Header **/
+#header-inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header-inicio h1 {
+  color: #333;
+  font-weight: 200;
+  font-size: 7rem;
+}
+
+#habits-scorecard .agregar--quitar {
+  border: 1px solid transparent;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+#habits-scorecard .agregar--quitar .agregar--habitos:hover {
+  color: #39b385;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#habits-scorecard .agregar--quitar .quitar--habitos:hover {
+  color: #e52a5a;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#habits-scorecard .agregar--quitar h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+#habits-scorecard form {
+  width: 100%;
+}
+
+#habits-scorecard form .form__input {
+  width: 93%;
+  border: none;
+  background-color: #333;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #f4f4f4;
+  padding: 0.3rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.7rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#habits-scorecard form .form__input:focus {
+  outline: none;
+}
+
+#habits-scorecard form i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#habits-scorecard form .fa-plus:hover {
+  color: #39b385;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#habits-scorecard form .fa-minus:hover {
+  color: #e52a5a;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#habits-scorecard form .fa-equals:hover {
+  color: #ffcb03;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#habits-scorecard .container--habitos {
+  width: 100%;
+}
+
+#habits-scorecard .container--habitos .habits {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0.3rem 1rem;
+  margin-bottom: 0.7rem;
+  border-radius: 10px;
+}
+
+#habits-scorecard .container--habitos .habits--plus {
+  background-color: #39b385;
+}
+
+#habits-scorecard .container--habitos .habits--minus {
+  background-color: #e52a5a;
+}
+
+#habits-scorecard .container--habitos .habits--equals {
+  background-color: #ffcb03;
+}
+
+#habits-scorecard .container--habitos .habits i {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#habits-scorecard .container--habitos .habits i:hover {
+  color: #f4f4f4;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#habits-scorecard .container--habitos button {
+  background: transparent;
+  border: 0;
+}
+/*# sourceMappingURL=styles.css.map */
