@@ -1,4 +1,5 @@
 $green-color: #39b385
+$dark-green: #2D8B67
 $red-color: #e52a5a
 $yellow-color: #ffcb03
 $light-color: #f4f4f4
@@ -37,6 +38,21 @@ ul
         display: flex
         flex-direction: column
         align-items: center
+    button
+        display: inline-block
+        background-color: $green-color
+        font-size: 1rem
+        font-family: inherit
+        font-weight: 500
+        border: none
+        padding: 10px 12px
+        border-radius: 10rem
+        cursor: pointer
+        transition: all 0.3s
+        &:hover
+            background-color: $dark-green
+            color: $light-color
+
 
 /** .noselect 
   -webkit-touch-callout: none 
@@ -108,6 +124,7 @@ ul
             &:hover
                 color: $yellow-color
                 transition: all 0.3s
+
     .container--habitos
         width: 100%
         .habits
@@ -135,3 +152,5 @@ ul
         button
             background: transparent
             border: 0
+
+
